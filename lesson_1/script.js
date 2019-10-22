@@ -1,11 +1,14 @@
 ' use strict';
 
-let money = prompt("Ваш бюджет на месяц?");
-let time = prompt("Введите дату в формате YYYY-MM-DD");
-let answerFirst = prompt("Введите обязательную статью расходов в этом месяце");
-let answerSecond = prompt("Во сколько обойдется?");
+let money = prompt("Ваш бюджет на месяц?"),
+    time = prompt("Введите дату в формате YYYY-MM-DD");
+let answerFirst = prompt("Введите обязательную статью расходов в этом месяце"),
+    answerSecond = prompt("Во сколько обойдется?"),
+    answerThird = prompt("Введите обязательную статью расходов в этом месяце"),
+    answerForth = prompt("Во сколько обойдется?");
 let expenses = {
-     answerFirst:answerSecond       
+     firstCategory:answerFirst + ":" + answerSecond,
+     secondCategory: answerThird + ":" + answerForth      
 };
 let appData = {
     budget:money,
@@ -20,4 +23,8 @@ console.log(money);
 console.log(time);
 console.log(answerFirst);
 console.log(answerSecond);
-console.log(expenses);
+console.log(answerThird);
+console.log(answerForth);
+console.log(expenses); 
+
+alert("Бюджет на 1 день:"+(money/30));
