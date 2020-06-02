@@ -139,6 +139,5 @@ let appData = {
     optionalExpenses: {},
     timeData: time,
     income: [],
-    savings: false,
-        
+    savings: false 
 };
